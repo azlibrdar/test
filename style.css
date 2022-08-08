@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 56px;
+  background-color: #02020291;
+  border-bottom: 1px solid #222222;
+
+  backdrop-filter: blur(88px);
+  -webkit-backdrop-filter: blur(88px);
+  position: sticky;
+  left: 0;
+  top: 0;
+
+  z-index: 99;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 80vh;
+  padding: 48px 16px;
+  user-select: none;
+}
+
+.main-text-content {
+  text-transform: uppercase;
+  color: #b2b2b2;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.main-sub-text-content {
+  text-transform: uppercase;
+  color: #e1e1e1;
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(91.02deg, #00aeef -5.18%, #f9ed32 110.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 24px;
+}
+
+.main-link:any-link {
+  display: inline-block;
+  width: 50vw;
+  height: 60px;
+  text-decoration: none;
+  color: #6cd4d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #13887c;
+  background-color: #0c3430;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-link:any-link:hover {
+  border: 2px solid #099587;
+  background-color: #12534d;
+}
+
+.cards-list-accordion {
+  padding: 24px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards-list-heading {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cecece;
+  margin-bottom: 24px;
+}
+
+.accordion {
+  font-family: inherit;
+  text-transform: uppercase;
+  background-color: #0f2523;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #d4d4d4;
+  padding: 24px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+  transition: all 0.4s;
+  user-select: none;
+  z-index: 98;
+}
+
+.accordion:after {
+  content: "\2212";
+  font-size: 15px;
+  font-weight: 200;
+  color: #d4d4d4;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 48px 12px;
+  background-color: #0a0a0a;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel-title {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #e1e1e1;
+  margin-bottom: 8px;
+}
+
+.panel-sub-title {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: #959595;
+  margin-bottom: 24px;
+}
+
+.panel-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.bs-card-front,
+.bs-card-back {
+  width: 400px;
+}
+
+.box {
+  transform: translateX(400px);
+  transition: transform 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400px);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.panel-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.panel-learn-more-link:any-link {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #1ac2ff;
+  transition: all 0.2s;
+  margin-bottom: 48px;
+}
+
+.panel-learn-more-link:any-link:hover {
+  color: #2ec7ff;
+}
+
+.panel-payment-link:any-link {
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  width: 40vw;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0084b5;
+  color: #f0f0f0;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.panel-payment-link:any-link:hover {
+  background-color: #0079a5;
+}
+
+.panel-payment-security {
+  font-size: 14px;
+  margin: 8px 0px;
+  width: 40vw;
+  padding: 4px 0;
+  background-color: #d8d8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #151515;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.razorpay-logo {
+  width: 78px;
+}

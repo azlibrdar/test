@@ -7,6 +7,7 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: #000000;
+  overflow-x: hidden;
 }
 
 html {
@@ -136,6 +137,7 @@ html {
   padding: 48px 12px;
   background-color: #0a0a0a;
   transition: max-height 0.2s ease-out;
+  margin: 24px 0px;
 }
 
 .panel-title {
